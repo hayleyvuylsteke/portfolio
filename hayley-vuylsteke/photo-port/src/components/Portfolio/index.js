@@ -3,6 +3,7 @@ import PortfolioItems from '../PortfolioItems'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button'
 
 
 function Portfolio(props) {
@@ -26,7 +27,7 @@ function Portfolio(props) {
                     <br />
                 </p>
                {categories.map((category) => (
-                    <li key={category.name} ><span onClick={() => {setCurrentCategory(category);}}>{category.name}</span></li>
+                    <Button className="portfolio-button" key={category.name} ><span onClick={() => {setCurrentCategory(category);}}>{category.name}</span></Button>
                 )
                )}
             <PortfolioItems category = {currentCategory.name} />
