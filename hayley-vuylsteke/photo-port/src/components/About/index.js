@@ -1,6 +1,6 @@
 import React from 'react'
 
-//import AboutCarousel from '../AboutCarousel'
+import AboutCarousel from '../AboutCarousel'
 
 //import bootstrap
 import Container from 'react-bootstrap/Container';
@@ -29,7 +29,7 @@ function About() {
             </Row>
             <Row className="section-spacing">
             <Col className="col-1"/>
-                <Col className="col-4 white-background-copy">            
+                <Col className="col-lg-4 col-md-12 white-background-copy">            
                 <p>
                 I have spent my career diving deeper and deeper into the world of digital. 
                 <br />
@@ -50,7 +50,7 @@ function About() {
                 </p>
                 </Col>
                 <Col className="col-1"/>
-                <Col className="col-5">
+                <Col className="col-lg-5 col-md-12">
                     <img className="head-shot" src={headShot} alt="Hayley Vuylsteke" />
                 </Col>
                 <Col className="col-1"/>
@@ -63,31 +63,31 @@ function About() {
             </Row>
             <Row className="color-block-content section-spacing">
                 <Col className="col-1" />
-                <Col className="col-2">
+                <Col className="col-lg-2 col-md-12">
                 <img className="highlight-icon" src={digitalMarketingIcon} alt="Digital Marketing Icon" />
                 <br />
                 <br />
                 10 years of experience in digital marketing
                 </Col>
-                <Col className="col-2">
+                <Col className="col-lg-2 col-md-12">
                 <img className="highlight-icon" src={webDevIcon} alt="Web Icon" />
                 <br />
                 <br />
                 Full-stack web developer proficient in HTML, CSS, and JavaScript
                 </Col>
-                <Col className="col-2">
+                <Col className="col-lg-2 col-md-12">
                 <img className="highlight-icon" src={funnelIcon} alt="Funnel Icon" />
                 <br />
                 <br />
                 Passionate about creating and implementing high-performing lead generation programs using an account-based strategy.
                 </Col>
-                <Col className="col-2">
+                <Col className="col-lg-2 col-md-12">
                 <img className="highlight-icon" src={gearIcon} alt="Gear Icon" />
                 <br />
                 <br />
                 An analytical thinker who excels at reviewing data and tweaking marketing programs to boost success
                 </Col>
-                <Col className="col-2">
+                <Col className="col-lg-2 col-md-12">
                 <img className="highlight-icon" src={managingIcon} alt="Digital Marketing Icon" />
                 <br />
                 <br />
@@ -103,10 +103,10 @@ function About() {
             </Row>
             <Row className="section-spacing">
                 <Col className="col-1" />
-                <Col className="col-5">
+                <Col className="col-lg-5 col-md-12">
                 <img className="head-shot" src={valuesPassions} alt="Values and Passions icon" />
                 </Col>
-                <Col className="col-5">
+                <Col className="col-lg-5 col-md-12">
                 <h5 className="header-almostBlack">Being Bold</h5>
                 <p>
                 I like to try new things and take on new challenges, without fear of failure. Because failure is sometimes what teaches us the best lessons #amiright?! Being challenged is what motivates me to succeed. 
@@ -138,7 +138,7 @@ function About() {
             </Row>
             <Row className="color-block-content section-spacing">
                 <Col className="col-1"/>
-                <Col className="col-6">
+                <Col className="col-lg-6 col-md-12">
                 <p>
                 When I’m not behind my computer, you can find me with my sweet family, chasing around my (soon-to-be) 3 busy-bodied tiny humans, catching a yoga class, on my spin bike or outside putting some miles on my Asics.
                 <br />
@@ -149,8 +149,8 @@ function About() {
                 My partner and I are avid DIY’ers who love taking on new projects--whether it’s building a new piece of furniture or renovating an entire house. 
                 </p>
                 </Col>
-                <Col className="col-4">
-                    carousel goes here
+                <Col className="col-lg-4 col-md-12">
+                   <AboutCarousel />
                 </Col>
                 <Col className="col-1"/>
             </Row>

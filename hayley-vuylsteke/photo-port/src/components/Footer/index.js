@@ -19,11 +19,11 @@ function Footer() {
         <section className="section-block-purple">
             <Container>
             <Row className="section-block-content">
-                <Col className="col-6">
+                <Col className="col-lg-6 col-md-12">
                     <img className="hayley-logo-footer" src={logo} alt="Hayley Vuylsteke" />
                 </Col>
-                <Col className="col-3" />
-                <Col className="col-3">
+                <Col className="col-lg-3 col-md-12" />
+                <Col className="col-lg-3 col-md-12">
                     <a href="https://github.com/hayleyvuylsteke">
                     <img className="footer-logo" src={gitHub} alt="Github" />
                     </a>

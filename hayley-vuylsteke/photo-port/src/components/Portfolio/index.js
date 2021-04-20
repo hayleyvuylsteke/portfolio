@@ -1,31 +1,35 @@
-import React from 'react'
-import PortfolioList from '../PortfolioList'
+import React, { useState } from 'react';
+import PortfolioItems from '../PortfolioItems'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
 function Portfolio(props) {
+    const [categories] = useState([{name: 'Full-stack Development'}, {name:'Marketing'}])
+
+    const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
     return (
         <section>
             <Container>
             <Row>
-                <Col className="col-12">
+                <Col className="col-12 portfolio-card">
                 <h1 className="header-purple section-header" id="portfolio">Some of my Work</h1>
             </Col>
                 
             </Row>
             <div>
                 <p>
-                    NEED A STATE ITEM THAT PASSES CATEGORY IN A STATE TO THE PORTFOLIO LIST AS A PROP.
+                    I've been working on a lot of cool projects lately. Check out the full-stack development projects that I've created during my time at the University of Toronto. Or, if you're more interested in seeing some of my freelance and corporate work, check out my marketing projects.
+                    <br />
+                    <br />
                 </p>
-            <PortfolioList />
-            </div>
-            <div>
-                <p>
-                Check out <a href="/Resume_Hayley_Vuylsteke.pdf">my resume</a>.
-                </p>
+               {categories.map((category) => (
+                    <li key={category.name} ><span onClick={() => {setCurrentCategory(category);}}>{category.name}</span></li>
+                )
+               )}
+            <PortfolioItems category = {currentCategory.name} />
             </div>
         </Container>
         </section>

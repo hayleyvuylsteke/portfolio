@@ -115,6 +115,20 @@ h5 {
 .logo-image {
   width: 300px;
 }
+
+.pill-styles {
+  color: var(--white);
+  background-color: #ff6495;
+}
+
+.nav-link {
+  color: var(--white);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--turquoise);
+}
 /*NAV STYLES ENDS*/
 
 /*ABOUT STYLES*/
@@ -164,6 +178,37 @@ h5 {
 }
 /* QUALIFICATION STYLES END*/
 
+/*PORTFOLIO STYLES*/
+
+.portfolio-col {
+  margin-bottom:15px;
+}
+.portfolio-card {
+  font-family: 'Titillium Web', sans-serif;
+  height: 100%;
+  padding: 15px;
+}
+.portfolio-title {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 35px
+}
+
+.portfolio-text {
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--w)
+}
+.portfolio-button {
+  background-color: var(--turquoise);
+  color: var(--almostBlack);
+  border: var(--purple);
+  margin-right: 10px
+}
+
+.portfolio-button:hover {
+  background-color: var(--purple);
+  color: var(--white)
+}
 /*FOOTER STYLES */
 .divider{
   margin-left:100px;

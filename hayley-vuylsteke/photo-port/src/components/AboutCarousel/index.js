@@ -1,6 +1,4 @@
-import React from 'react'
-import travel from '../../assets/travel.jpg'
-import family from '../../assets/Hayl1.jpg'
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 
 function AboutCarousel() {
@@ -13,13 +11,13 @@ function AboutCarousel() {
     return (
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-            <img src={family} className="d-block w-100" alt="My Family" />
+            <img src="/Hayl1.jpg" className="d-block w-100" alt="My Family" />
           <Carousel.Caption>
             <h3>My Family</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img src={travel} className="d-block w-100" alt="Annual Mexico Trip"/>
+            <img src="/travel.jpg" className="d-block w-100" alt="Annual Mexico Trip"/>
         <Carousel.Caption>
             <h3>Family Mexico Trip</h3>
           </Carousel.Caption>

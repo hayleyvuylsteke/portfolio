@@ -25,7 +25,7 @@ function Qualifications() {
             </Row>
             <Row className="section-spacing">
                 <Col className="col-1"/>
-                <Col className="col-5">
+                <Col className="col-lg-5 col-md-12">
                 <p>
                 I’ve gained a lot of experience in my 10 years as a digital marketer. From B2B to B2C, I've worked with organizations of all sizes to strategize, implement and optimize digital marketing programs.
                 <br />
@@ -39,7 +39,7 @@ function Qualifications() {
                 Still want to know more? Here's <a href="/Resume_Hayley_Vuylsteke.pdf" className="text-link">my resume</a>.
                 </p>
                 </Col>
-                <Col className="col-5">
+                <Col className="col-lg-5 col-md-12">
                     <Accordion className="accordian">
                         <Card className="full-card">
                             <Card.Header>
@@ -137,7 +137,7 @@ function Qualifications() {
             </Row>
             <Row className="color-block-content section-spacing">
                 <Col className="col-1"/>
-                <Col className="col-3">
+                <Col className="col-lg-3 col-md-12">
                 <img className="highlight-icon" src={education} alt="School Icon" />
                 <br />
                 <br />
@@ -145,7 +145,7 @@ function Qualifications() {
                     I graduated with an Advanced Diploma from the Business Administration - Marketing program at Conestoga College in 2011.
                 </Col>
                 <Col className="col-1"/>
-                <Col className="col-3">
+                <Col className="col-lg-3 col-md-12">
                 <img className="highlight-icon" src={conEd} alt="Continuing Education Icon" />
                 <br />
                 <br />
@@ -153,7 +153,7 @@ function Qualifications() {
                     In May 2021, I will graduate from the University of Toronto's Full-stack Web Developer Bootcamp program.
                 </Col>
                 <Col className="col-1"/>
-                <Col className="col-3">
+                <Col className="col-lg-3 col-md-12">
                 <img className="highlight-icon" src={cert} alt="Certification Icon" />
                 <br />
                 <br />
