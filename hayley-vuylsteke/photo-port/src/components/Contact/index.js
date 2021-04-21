@@ -8,11 +8,16 @@ import { validateEmail } from '../../utils/helpers';
 
 
 function Contact() {
-    const [formState, setFormState] = useState({ firstNname: '', lastName: '', email: '', message: '' });
+    const [formState, setFormState] = useState({ firstName: '', lastName: '', email: '', message: '' });
     const { firstName, lastName, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
-    const handleChange = (e) => {
+    function handleChange(e) {
+      setFormState({...formState, name: e.target.value })
+    }
+    
+    console.log(formState);
+   /* const handleChange = (e) => {
         if (e.target.name === 'email') {
           const isValid = validateEmail(e.target.value);
           if (!isValid) {
@@ -28,12 +33,12 @@ function Contact() {
           }
         }
       };
-      console.log(formState);
+      console.log(formState);*/
 
       const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
-          setFormState({ [e.target.name]: e.target.value });
+         // setFormState({ [e.target.name]: e.target.value });
           console.log('Form', formState);
         }
       };
@@ -56,11 +61,11 @@ function Contact() {
                     <Form>
                         <Form.Group controlId="firstname">
                             <Form.Label>First name:</Form.Label>
-                                <Form.Control type="firstname" placeholder="first name" defaultValue={firstName} onChange={handleChange} name="firstName" />
+                                <Form.Control type="firstname" placeholder="Your first name" defaultValue={firstName} onChange={handleChange} name="firstName" />
                         </Form.Group>
                         <Form.Group controlId="firstname">
                             <Form.Label>Last name:</Form.Label>
-                                <Form.Control type="lastname" placeholder="last name" defaultValue={lastName} onChange={handleChange} name="lastName"  />
+                                <Form.Control type="lastname" placeholder="Your last name" defaultValue={lastName} onChange={handleChange} name="lastName"  />
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Label>Email address</Form.Label>
@@ -68,7 +73,7 @@ function Contact() {
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Your message:</Form.Label>
-                            <Form.Control as="textarea" rows={3} defaultValue={message} onChange={handleChange} name="message" />
+                            <Form.Control as="textarea" rows={3} defaultValue={message} onChange={handleChange} name="Your message" />
                         </Form.Group>
                         <br />
 
